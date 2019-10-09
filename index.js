@@ -22,17 +22,13 @@ var two = 2
 }
 add(5);
 var funkyFunction = function() {
-    return function(){
-      return "FUNKY!"
-    }
+  return function() {
+    return "FUNKY!"
   }
+}
 
+// We want 'funkyFunction' on the line below to return a function that returns "FUNKY!" -- how can we accomplish that?
+// To pass this final test, you only need to modify the code below this line.
+var theFunk = funkyFunction()
 
-
-
-// We want to set theFunk equal to "FUNKY!" using our funkyFunction.
-// NOTE: you only need to modify the code below this line.
-
-var theFunk = funkyFunction();
 theFunk();
-
